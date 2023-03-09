@@ -1,12 +1,12 @@
-function invertirString(cadena){
+function invertirString(cadena) {
     let invertida = ""
     for (let i = cadena.length - 1; i > 0; i--) {
         invertida += cadena[i]
     }
     return invertida
-}  
+}
 
-function findMax(numbers){
+function findMax(numbers) {
     let max = numbers[0]
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] > max) {
@@ -17,7 +17,7 @@ function findMax(numbers){
     return max
 }
 
-function includes(numbers, n){
+function includes(numbers, n) {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] == n) {
             return true
@@ -28,7 +28,7 @@ function includes(numbers, n){
 
 
 
-function sum(numbers){
+function sum(numbers) {
     let sum = 0
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i]
@@ -36,7 +36,7 @@ function sum(numbers){
     return sum
 }
 
-function missingNumbers(numbers){
+function missingNumbers(numbers) {
     let max = numbers[0]
     let min = numbers[0]
 
@@ -54,11 +54,9 @@ function missingNumbers(numbers){
     let missing = []
 
     for (let i = min; i < max; i++) {
-        
         if (!numbers.includes(i)) {
             missing.push(i)
         }
-        
     }
 
     return missing

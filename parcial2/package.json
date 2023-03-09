@@ -1,0 +1,11 @@
+{
+  "name": "parcial1-dllo-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node parcial1.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.3"
+  }
+}
